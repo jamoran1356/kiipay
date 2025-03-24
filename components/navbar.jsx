@@ -57,7 +57,7 @@ export function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="inline-flex items-center justify-center md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-primary-foreground bg-primary hover:bg-primary/90 md:hidden"
           onClick={toggleMenu}
           aria-expanded={menuOpen}
         >
@@ -67,34 +67,36 @@ export function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      {menuOpen && (
-        <div className="fixed inset-0 top-16 z-50 bg-background md:hidden">
-          <div className="container mt-4 flex flex-col gap-4 p-4">
-            <nav className="flex flex-col gap-4">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-lg font-medium transition-colors hover:text-primary"
-                  onClick={closeMenu}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
-            <div className="flex flex-col gap-2 mt-4">
-              <Link href="/login" onClick={closeMenu}>
-                <Button variant="outline" className="w-full">
-                  Log in
-                </Button>
+      <div
+        className={`fixed inset-0 top-16 z-50 bg-background/95 backdrop-blur-sm transform transition-transform duration-300 ease-in-out md:hidden ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="container mt-4 flex flex-col gap-4 p-4">
+          <nav className="flex flex-col gap-4">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-lg font-medium transition-colors hover:text-primary border-b border-muted pb-2"
+                onClick={closeMenu}
+              >
+                {item.name}
               </Link>
-              <Link href="/register" onClick={closeMenu}>
-                <Button className="w-full">Sign up</Button>
-              </Link>
-            </div>
+            ))}
+          </nav>
+          <div className="flex flex-col gap-2 mt-4">
+            <Link href="/login" onClick={closeMenu}>
+              <Button variant="outline" className="w-full">
+                Log in
+              </Button>
+            </Link>
+            <Link href="/register" onClick={closeMenu}>
+              <Button className="w-full">Sign up</Button>
+            </Link>
           </div>
         </div>
-      )}
+      </div>
     </header>
   )
 }

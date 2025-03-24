@@ -651,32 +651,33 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-xl font-medium text-slate-700">Utilizado por empresas innovadoras</h2>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16 opacity-80">
+              <div className="flex flex-wrap items-center justify-center gap-10 md:gap-16 lg:gap-20 mt-6">
                 <div className="flex items-center justify-center">
-                  <svg className="h-8 text-slate-400" viewBox="0 0 100 32" fill="currentColor">
-                    <path d="M15.5 0C6.9 0 0 6.9 0 15.5S6.9 31 15.5 31 31 24.1 31 15.5 24.1 0 15.5 0zm0 28C8.6 28 3 22.4 3 15.5S8.6 3 15.5 3 28 8.6 28 15.5 22.4 28 15.5 28z" />
-                    <path d="M15.5 6C10.3 6 6 10.3 6 15.5S10.3 25 15.5 25 25 20.7 25 15.5 20.7 6 15.5 6zm0 16c-3.6 0-6.5-2.9-6.5-6.5S11.9 9 15.5 9 22 11.9 22 15.5 19.1 22 15.5 22z" />
-                    <path d="M15.5 12c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z" />
-                    <path d="M47 10h-6v12h2v-5h4c2.2 0 4-1.8 4-4s-1.8-3-4-3zm0 5h-4v-3h4c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1zM55 10h-2v12h2V10zM61 10h-3v12h3c3.3 0 6-2.7 6-6s-2.7-6-6-6zm0 10h-1v-8h1c2.2 0 4 1.8 4 4s-1.8 4-4 4zM83 10h-6v2h2v10h2V12h2v-2zM89 10h-3v12h2v-9l4 9h3V10h-2v9l-4-9z" />
-                  </svg>
+                  <Image
+                    src="/images/logo-kiichain.png"
+                    alt="KiiChain Logo"
+                    width={180}
+                    height={60}
+                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
                 <div className="flex items-center justify-center">
-                  <svg className="h-8 text-slate-400" viewBox="0 0 100 32" fill="currentColor">
-                    <path d="M8.5 15.5c0-3.9 3.2-7.1 7.1-7.1s7.1 3.2 7.1 7.1-3.2 7.1-7.1 7.1-7.1-3.2-7.1-7.1zm7.1 4.6c2.5 0 4.6-2.1 4.6-4.6s-2.1-4.6-4.6-4.6-4.6 2.1-4.6 4.6 2.1 4.6 4.6 4.6zM36.3 8.4h-2.6v14.1h2.6V8.4zM44.9 8.4h-2.6v14.1h2.6V8.4zM53.5 8.4H41.1v2.6h4.9v11.5h2.6V11h4.9V8.4zM61.4 8.4h-2.6v14.1h2.6V8.4zM69.9 8.4h-2.6v14.1h2.6V8.4zM78.5 8.4H66.1v2.6H71v11.5h2.6V11h4.9V8.4zM86.4 8.4h-2.6v14.1h2.6V8.4zM94.9 8.4h-2.6v14.1h2.6V8.4z" />
-                  </svg>
+                  <Image
+                    src="/images/logo-kiiex.png"
+                    alt="KIIEX Logo"
+                    width={180}
+                    height={60}
+                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
                 <div className="flex items-center justify-center">
-                  <svg className="h-8 text-slate-400" viewBox="0 0 100 32" fill="currentColor">
-                    <path d="M15.5 0C6.9 0 0 6.9 0 15.5S6.9 31 15.5 31 31 24.1 31 15.5 24.1 0 15.5 0zm0 28C8.6 28 3 22.4 3 15.5S8.6 3 15.5 3 28 8.6 28 15.5 22.4 28 15.5 28z" />
-                    <path d="M44 10h-6v12h6v-2h-4v-3h4v-2h-4v-3h4v-2zM54 10h-8v2h3v10h2V12h3v-2zM64 10h-6v12h2v-5h4c2.2 0 4-1.8 4-4s-1.8-3-4-3zm0 5h-4v-3h4c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1zM78 10h-8v12h8v-2h-6v-3h4v-2h-4v-3h6v-2zM92 10h-8v2h3v10h2V12h3v-2z" />
-                  </svg>
-                </div>
-                <div className="flex items-center justify-center">
-                  <svg className="h-8 text-slate-400" viewBox="0 0 100 32" fill="currentColor">
-                    <path d="M15.5 0C6.9 0 0 6.9 0 15.5S6.9 31 15.5 31 31 24.1 31 15.5 24.1 0 15.5 0zm0 28C8.6 28 3 22.4 3 15.5S8.6 3 15.5 3 28 8.6 28 15.5 22.4 28 15.5 28z" />
-                    <path d="M15.5 6C10.3 6 6 10.3 6 15.5S10.3 25 15.5 25 25 20.7 25 15.5 20.7 6 15.5 6zm0 16c-3.6 0-6.5-2.9-6.5-6.5S11.9 9 15.5 9 22 11.9 22 15.5 19.1 22 15.5 22z" />
-                    <path d="M47 10h-6v12h2v-5h4c2.2 0 4-1.8 4-4s-1.8-3-4-3zm0 5h-4v-3h4c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1zM61 10h-6v12h6v-2h-4v-3h3v-2h-3v-3h4v-2zM71 10h-4v12h2V12h2c.6 0 1 .4 1 1v9h2v-9c0-1.7-1.3-3-3-3zM83 10h-6v12h2v-5h4c2.2 0 4-1.8 4-4s-1.8-3-4-3zm0 5h-4v-3h4c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1z" />
-                  </svg>
+                  <Image
+                    src="/images/logo-kii.png"
+                    alt="KII Logo"
+                    width={120}
+                    height={60}
+                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                  />
                 </div>
               </div>
             </div>

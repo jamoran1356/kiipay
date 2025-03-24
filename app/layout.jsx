@@ -5,9 +5,11 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Kiipay - Payment Solutions",
+  title: "Kiipay - Soluciones de pago",
   description: "Secure, fast, and reliable payment processing solutions for businesses of all sizes.",
-    generator: 'v0.dev'
+  autor: "Kiipay",
+  keywords: "payment processing, payment gateway, payment solutions, payment API",
+  version: "1.0.23",
 }
 
 export default function RootLayout({ children }) {
@@ -25,3 +27,4 @@ export default function RootLayout({ children }) {
 
 
 import './globals.css'
+import { version } from "os"
