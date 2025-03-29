@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronRight, CreditCard, Globe, MessageSquare, Moon, Shield, Sun, User } from "lucide-react"
+import { ChevronRight, CreditCard, Globe, MessageSquare, Moon, Shield, ShoppingCart, Sun, User } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -222,6 +222,20 @@ export default function SettingsPage() {
                   <div>
                     <h3 className="font-medium">Pagos SMS</h3>
                     <p className="text-xs text-slate-500">Configura los pagos por mensaje de texto</p>
+                  </div>
+                </div>
+                <ChevronRight className="h-4 w-4 text-slate-400" />
+              </Link>
+
+              <Link
+                href="/dashboard/settings/pos-config"
+                className="flex items-center justify-between p-3 rounded-lg border hover:bg-slate-50"
+              >
+                <div className="flex items-center">
+                  <ShoppingCart className="h-5 w-5 text-slate-500 mr-3" />
+                  <div>
+                    <h3 className="font-medium">Configuración PDV</h3>
+                    <p className="text-xs text-slate-500">Configura tu punto de venta e impresora</p>
                   </div>
                 </div>
                 <ChevronRight className="h-4 w-4 text-slate-400" />

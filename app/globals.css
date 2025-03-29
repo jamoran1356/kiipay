@@ -49,6 +49,10 @@
   }
 }
 
+.justify-start {
+  justify-content: flex-start!important;
+}
+
 @layer base {
   * {
     @apply border-border;

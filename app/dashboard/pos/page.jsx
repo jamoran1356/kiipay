@@ -123,9 +123,11 @@ export default function POSPage() {
             <Clock className="mr-2 h-4 w-4" />
             Historial
           </Button>
-          <Button size="sm" className="bg-[#0a2463] hover:bg-[#0a2463]/90">
-            <ShoppingCart className="mr-2 h-4 w-4" />
-            Nueva Venta
+          <Button size="sm" className="bg-[#0a2463] hover:bg-[#0a2463]/90" asChild>
+            <Link href="/dashboard/pos/new-sale">
+              <ShoppingCart className="mr-2 h-4 w-4" />
+              Nueva Venta
+            </Link>
           </Button>
         </div>
       </div>
@@ -201,7 +203,11 @@ export default function POSPage() {
               <TableBody>
                 {recentSales.map((sale) => (
                   <TableRow key={sale.id}>
-                    <TableCell className="font-medium">{sale.id}</TableCell>
+                    <TableCell className="font-medium">
+                      <Link href={`/dashboard/pos/sales/${sale.id}`} className="hover:underline">
+                        {sale.id}
+                      </Link>
+                    </TableCell>
                     <TableCell>{sale.customer}</TableCell>
                     <TableCell>{sale.date}</TableCell>
                     <TableCell>{sale.amount}</TableCell>
@@ -230,21 +236,29 @@ export default function POSPage() {
             <CardDescription>Accede rápidamente a las funciones más utilizadas</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
-            <Button className="w-full justify-start bg-[#0a2463] hover:bg-[#0a2463]/90">
-              <ShoppingCart className="mr-2 h-5 w-5" />
-              Nueva Venta
+            <Button className="w-full justify-start bg-[#0a2463] hover:bg-[#0a2463]/90" asChild>
+              <Link href="/dashboard/pos/new-sale">
+                <ShoppingCart className="mr-2 h-5 w-5" />
+                Nueva Venta
+              </Link>
             </Button>
-            <Button variant="outline" className="w-full justify-start">
-              <Plus className="mr-2 h-5 w-5" />
-              Añadir Producto
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <Link href="/dashboard/pos/inventory">
+                <Plus className="mr-2 h-5 w-5" />
+                Añadir Producto
+              </Link>
             </Button>
-            <Button variant="outline" className="w-full justify-start">
-              <Package2 className="mr-2 h-5 w-5" />
-              Gestionar Inventario
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <Link href="/dashboard/pos/inventory">
+                <Package2 className="mr-2 h-5 w-5" />
+                Gestionar Inventario
+              </Link>
             </Button>
-            <Button variant="outline" className="w-full justify-start">
-              <BarChart3 className="mr-2 h-5 w-5" />
-              Ver Informes
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <Link href="/dashboard/pos/reports">
+                <BarChart3 className="mr-2 h-5 w-5" />
+                Ver Informes
+              </Link>
             </Button>
           </CardContent>
         </Card>
@@ -287,7 +301,11 @@ export default function POSPage() {
                 <TableBody>
                   {popularProducts.map((product) => (
                     <TableRow key={product.id}>
-                      <TableCell className="font-medium">{product.id}</TableCell>
+                      <TableCell className="font-medium">
+                        <Link href={`/dashboard/pos/inventory/${product.id}`} className="hover:underline">
+                          {product.id}
+                        </Link>
+                      </TableCell>
                       <TableCell>{product.name}</TableCell>
                       <TableCell>{product.category}</TableCell>
                       <TableCell>{product.price}</TableCell>
@@ -353,9 +371,11 @@ export default function POSPage() {
               </Table>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" size="sm" className="ml-auto">
-                <Truck className="mr-2 h-4 w-4" />
-                Gestionar Pedidos
+              <Button variant="outline" size="sm" className="ml-auto" asChild>
+                <Link href="/dashboard/pos/providers">
+                  <Truck className="mr-2 h-4 w-4" />
+                  Gestionar Pedidos
+                </Link>
               </Button>
             </CardFooter>
           </Card>

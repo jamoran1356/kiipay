@@ -10,7 +10,6 @@ import {
   CreditCard,
   Globe,
   MessageSquare,
-  Shield,
   Smartphone,
   Zap,
   Facebook,
@@ -218,21 +217,14 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/register">
-                    <Button
-                      size="lg"
-                      className="px-8 bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white border-0 shadow-lg shadow-indigo-500/20"
-                    >
-                      Comienza Gratis
+                    <Button className="px-8 bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white border-0 shadow-lg shadow-indigo-500/20">
+                      Comenzar ahora
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
                   <Link href="#how-it-works">
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="px-8 border-slate-300 text-slate-700 hover:bg-slate-100"
-                    >
-                      Ver Demo
+                    <Button variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-100">
+                      Ver demo
                     </Button>
                   </Link>
                 </div>
@@ -1505,9 +1497,8 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/register">
-                  <Button size="lg" className="px-8 bg-white text-indigo-600 hover:bg-slate-100 border-0">
-                    Crear Cuenta Gratis
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-100">
+                    Cuenta Gratis
                   </Button>
                 </Link>
                 <Button
@@ -1521,15 +1512,6 @@ export default function Home() {
                 >
                   {isConnecting ? "Conectando..." : "Conectar Wallet"}
                 </Button>
-                <Link href="/contact">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="px-8 border-white text-white hover:bg-white/10 bg-indigo-600/30"
-                  >
-                    Hablar con Ventas
-                  </Button>
-                </Link>
               </div>
               {walletError && <div className="mt-4 p-2 bg-red-100 text-red-700 rounded-md text-sm">{walletError}</div>}
               {walletConnected && (
