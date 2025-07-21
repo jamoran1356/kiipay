@@ -66,7 +66,7 @@ For the hackathon, we are delivering the Minimum Viable Product (MVP) with the f
 
 ## 🤝 Team
 
-- **Team:** Ing. Jesús Morán.
+- Ing. Jesús Morán.
 
 ---
 
@@ -84,6 +84,3 @@ MIT License
 
 ---
 
-### ⭐ Support
-
-If you like this project, give it a ⭐ on [GitHub](https://github.com/jamoran1356/kiipay)!
