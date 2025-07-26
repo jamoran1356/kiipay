@@ -1,0 +1,18 @@
+{
+  "canisters": {
+    "kiipay_backend": {
+      "main": "kiipay_backend/main.mo",
+      "type": "motoko"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "type": "persistent"
+    }
+  },
+  "version": 1
+}
